@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: inter_customers
+    description: "Customers data extracted from S3"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_name
+        description: "Customer full name"
+        tests:
+          - not_null
+

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: mart_customer_sales
+    description: "Joined sales data with customer information"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+
+      - name: customer_name
+        description: "Full name of the customer"
+        tests:
+          - not_null
+
+      - name: amount
+        description: "Amount of the sale"
+        tests:
+          - not_null
+
+      - name: sale_date
+        description: "Date when the sale occurred"
+        tests:
+          - not_null
+

@@ -1,0 +1,37 @@
+name: dbt_dremio_process
+version: 1.0
+config-version: 2
+
+profile: dbt_dremio_process
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+quoting:
+  database: true
+  schema: true
+  identifier: true
+
+vars:
+  dremio:reflections_metadata_enabled: true
+  dremio:exact_search_enabled: true
+
+models:
+  dbt_dremio_process:
+      inter:
+          schema: inter
+          materialized: view
+          enabled: true
+      mart:
+          schema: mart
+          materialized: view
+          enabled: true

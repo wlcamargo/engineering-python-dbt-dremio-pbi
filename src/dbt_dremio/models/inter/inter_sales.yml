@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: inter_sales
+    description: "Sales data extracted from S3"
+    columns:
+      - name: sale_id
+        description: "Unique identifier for each sale"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Identifier for the customer making the purchase"
+        tests:
+          - not_null
+
+      - name: amount
+        description: "Amount of the sale"
+        tests:
+          - not_null
+
+      - name: sale_date
+        description: "Date when the sale took place"
+        tests:
+          - not_null

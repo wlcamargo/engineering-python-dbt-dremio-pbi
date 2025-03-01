@@ -1,0 +1,15 @@
+dbt_dremio_process:
+  outputs:
+    dev:
+      dremio_space: '@user'
+      dremio_space_folder: 
+      object_storage_path: /raw
+      object_storage_source:
+      password: dremio123
+      port: 9047
+      software_host: 172.18.206.109
+      threads: 1
+      type: dremio
+      use_ssl: false
+      user: dremio
+  target: dev

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: mart_agg_customer_sales
+    description: "Aggregated sales data for each customer"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+
+      - name: customer_name
+        description: "Full name of the customer"
+        tests:
+          - not_null
+
+      - name: sales_amount
+        description: "Total sales amount for the customer"
+        tests:
+          - not_null
+
+      - name: last_update_date
+        description: "Timestamp when the data was last updated"
+        tests:
+          - not_null
+
