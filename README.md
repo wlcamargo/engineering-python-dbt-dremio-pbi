@@ -56,9 +56,16 @@ sudo docker compose up -d
 
 ## Como rodar a ingestão com Python?
 Entre na pasta ```src/pyingestor``` e execute o programa ```main.py```
+```
+python3 main.py
+```
 
 ## Como rodar o processamento com dbt?
-Entre na pasta ```src/dbt_dremio``` e execute o programa ```dbt run```
+Entre na pasta ```src/dbt_dremio``` e execute o comando 
+
+```
+dbt run
+```
 
 ## Como acessar os serviços?
 
