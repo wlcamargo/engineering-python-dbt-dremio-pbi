@@ -49,12 +49,16 @@ pip install -r requirements.txt
 ```
 
 ## Como subir o serviço do Dremio com o Minio?
-Entre na pasta
+Entre na pasta ```docker``` e execute o comando:
+```
+sudo docker compose up -d
+```
 
 ## Como rodar a ingestão com Python?
 Entre na pasta ```src/pyingestor``` e execute o programa ```main.py```
 
 ## Como rodar o processamento com dbt?
+Entre na pasta ```src/dbt_dremio``` e execute o programa ```dbt run```
 
 ## Como acessar os serviços?
 
