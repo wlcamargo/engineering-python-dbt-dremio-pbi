@@ -11,7 +11,7 @@ Esse projeto consiste em simular um ambiente de BigData local onde vamos realiza
 - O Power BI vai conectar no Dremio e fazer exibição dos dados.
 
 ## Video tutorial
-Link: 
+Link: https://youtu.be/eiM05UZy-ag
 
 ## Pré-requisitos
 * Docker
