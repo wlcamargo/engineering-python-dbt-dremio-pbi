@@ -1,17 +1,8 @@
 services:
-  # Nessie Catalog Server Using In-Memory Store
-  nessie:
-    image: projectnessie/nessie:latest
-    container_name: catalog
-    networks:
-      - dremio-network
-    ports:
-      - 19120:19120
-
   # Minio Storage Server
   minio:
     image: minio/minio:latest
-    container_name: storage
+    container_name: s3
     environment:
       - MINIO_ROOT_USER=admin
       - MINIO_ROOT_PASSWORD=password

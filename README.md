@@ -83,11 +83,6 @@ login: dremio
 senha: dremio123
 ```
 
-### Nessie
-```
-nessie: localhost: 19120
-```
-
 ## Como conectar o Power BI ao Dremio?
 Busque pelo conector do Dremio 
 
