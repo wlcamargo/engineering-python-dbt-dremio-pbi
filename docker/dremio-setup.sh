@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install required tools
-apk add --no-cache curl jq
+apk update && apk add --no-cache curl jq
 
 # Wait for Dremio to be ready
 until curl -s http://dremio:9047; do
